@@ -1,0 +1,2 @@
+# state_machine_example
+In this example code two POSIX Linux threads are created. The "CAM" thread implements a state machine that has knowledge of it's current status at any given time. The other thread operates the CAM thread services using its function call based message interface and cycles through the states in its state machine. The CAM state machine checks to see if an incoming command for state transition is received in a valid state. It will only transition its state if the transition event is received in the appropriate state.
